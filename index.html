@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soft - Colchones de Alta Calidad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu_open" />
+    <link rel="stylesheet" href="/assets/style/stile.css">
+</head>
+
+<body>
+    <!-- Sección de Bienvenida -->
+    <header class="header">
+        <div class="menu-fijo">
+
+            <div class="LOGO-PCPAL">
+                <img src="/assets/imagenes/logo.webp" alt="Menú" class="menu-logo">
+
+            </div>
+            <H5>FABRICA DE SUEÑOS - FABRICA DE COLCHONES</H5>
+            <div class="menu-container">
+                <div class="menu-icon">
+                    <span class="material-symbols-outlined"> menu_open </span>
+                </div>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#login">Login</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#quienes-somos">Quienes Somos</a></li>
+                        <li><a href="#carrito">Carrito</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <h1>Soft</h1>
+            <p>Donde el descanso de calidad es nuestra prioridad.</p>
+            <a href="#productos" class="cta">Explorar Productos</a>
+        </div>
+    </header>
+
+    <!-- Sección de Productos Destacados -->
+    <section id="productos" class="productos">
+        <h2>Colchones Destacados</h2>
+
+        <!-- Filtros de productos -->
+        <div class="filtros">
+            <button class="filtro-btn" data-filter="all">Todos</button>
+            <button class="filtro-btn" data-filter="soft">Soft</button>
+            <button class="filtro-btn" data-filter="quality">Quality</button>
+            <button class="filtro-btn" data-filter="premium">Premium</button>
+            <button class="filtro-btn" data-filter="resortes">Resortes</button>
+        </div>
+
+        <section id="productos" class="productos">
+            <h2>Colchones Destacados</h2>
+            <div class="carousel-container">
+                <button class="prev-arrow">❮</button>
+                <!-- Carrusel de productos -->
+                <div class="productos-carousel">
+                    <div class="producto soft">
+                        <img src="/assets/imagenes/colchon1.png" alt="Colchón Confort">
+                        <h3>Colchón Confort</h3>
+                        <p>Descripción breve del colchón 1.</p>
+                        <button class="add-to-cart"> <i class='bx bx-cart-add'></i></button>
+                    </div>
+                    <div class="producto soft">
+                        <img src="/assets/imagenes/colchon1.png" alt="Colchón Confort">
+                        <h3>Colchón Confort</h3>
+                        <p>Descripción breve del colchón 1.</p>
+                        <button class="add-to-cart"> <i class='bx bx-cart-add'></i></button>
+                    </div>
+                    <div class="producto quality">
+                        <img src="/assets/imagenes/colchon2.png" alt="Colchón Suave">
+                        <h3>Colchón Suave</h3>
+                        <p>Descripción breve del colchón 1.</p>
+                        <button class="add-to-cart"> <i class='bx bx-cart-add'></i></button>
+                    </div>
+                    <div class="producto premium">
+                        <img src="/assets/imagenes/colchon3.png" alt="Colchón Deluxe">
+                        <h3>Colchón Deluxe</h3>
+                        <p>Descripción breve del colchón 1.</p>
+                        <button class="add-to-cart"> <i class='bx bx-cart-add'></i></button>
+                    </div>
+                    <div class="producto resortes">
+                        <img src="/assets/imagenes/colchon4.png" alt="Colchón Resortes">
+                        <h3>Colchón Resortes</h3>
+                        <p>Descripción breve del colchón 1.</p>
+                        <button class="add-to-cart"> <i class='bx bx-cart-add'></i></button>
+                    </div>
+                    <div class="producto resortes">
+                        <img src="/assets/imagenes/colchon4.png" alt="Colchón Resortes">
+                        <h3>Colchón Resortes</h3>
+                        <p>Descripción breve del colchón 1.</p>
+                        <button class="add-to-cart"> <i class='bx bx-cart-add'></i></button>
+                    </div>
+                    <div class="producto premium">
+                        <img src="/assets/imagenes/colchon5.png" alt="Colchón Deluxe">
+                        <h3>Colchón Deluxe</h3>
+                        <p>Descripción breve del colchón 1.</p>
+                        <button class="add-to-cart"> <i class='bx bx-cart-add'></i></button>
+                    </div>
+                    <div class="producto quality">
+                        <img src="/assets/imagenes/colchon6.png" alt="Colchón Suave">
+                        <h3>Colchón Suave</h3>
+                        <p>Descripción breve del colchón 1.</p>
+                        <button class="add-to-cart"> <i class='bx bx-cart-add'></i></button>
+                    </div>
+                </div>
+                <button class="next-arrow">❯</button>
+            </div>
+        </section>
+
+        <!-- Modal para vista previa -->
+        <div id="producto-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img id="modal-img" src="" alt="Vista previa del producto">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section href="#contacto" id="contacto" class="contacto">
+
+        <h2>Contacto</h2>
+        <form action="https://formsubmit.co/mauricio.pairetti@gmail.com" method="POST">
+            <!-- <input type="hidden" name="_captcha" value="false">  -->
+            <!-- <input type="hidden" name="_next" value="https://tusitio.com/gracias.html"> Página de confirmación -->
+            <input type="hidden" name="_template" value="table"> <!-- Para obtener formato de tabla en el email -->
+
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <input type="text" name="asunto" placeholder="Asunto" required>
+            <textarea name="message" placeholder="Tu mensaje" required></textarea>
+
+            <!-- Captcha personalizado -->
+            <!-- <label for="captcha">¿Cuánto es 2 + 3?</label>
+            <input type="text" id="captcha" name="captcha" placeholder="Responde aquí" required> -->
+
+            <button type="submit">Enviar</button>
+        </form>
+        <!-- Popup para confirmar el envío -->
+        <div id="popup" class="popup">
+            ¡El email ha sido enviado con éxito!
+        </div>
+        <!-- <p id="mensaje-confirmacion">Gracias por contactarnos, responderemos a la brevedad.</p> -->
+    </section>
+</body>
+<script src="/assets/style/app/scroll.js"></script>
+<script src="/assets/style/app/filtrado.js"></script>
+<script src="/assets/style/app/carrusel.js"></script>
+<script src="/assets/style/app/validacion-mail.js"></script>
+
+</html>
